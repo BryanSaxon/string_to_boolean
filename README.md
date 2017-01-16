@@ -35,6 +35,8 @@ Use `to_bool` on any string.
 'y'.to_bool
 '1'.to_bool
 
+# Returns => true
+
 # False Examples:
 'False'.to_bool
 'false'.to_bool
@@ -46,10 +48,14 @@ Use `to_bool` on any string.
 'n'.to_bool
 '0'.to_bool
 
+# Returns => false
+
 # Other False Examples:
 'hello'.to_bool
 'world'.to_bool
 'Any other string'.to_bool
+
+# Returns => false
 ```
 
 ## Development
