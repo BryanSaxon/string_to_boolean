@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Bryan Saxon"]
   spec.email         = ["emailBryanSaxon@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Gem to call to_bool on strings.}
+  spec.description   = %q{Extends the Ruby `String` class to convert strings to booleans.}
+  spec.homepage      = "https://github.com/BryanSaxon/string_to_boolean"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
