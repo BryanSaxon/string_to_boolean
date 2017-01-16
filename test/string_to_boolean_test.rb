@@ -1,11 +1,38 @@
 require 'test_helper'
+require 'pry'
 
 class StringToBooleanTest < Minitest::Test
   def test_that_it_has_a_version_number
     refute_nil ::StringToBoolean::VERSION
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_returns_true
+    true_boolean_strings.each do |string|
+      assert_equal true, string.to_bool
+    end
+  end
+
+  def test_returns_false
+    false_boolean_strings.each do |string|
+      assert_equal false, string.to_bool
+    end
+
+    random_boolean_strings.each do |string|
+      assert_equal false, string.to_bool
+    end
+  end
+
+  private
+
+  def true_boolean_strings
+    ['true', 'True', 't', 'T', 'yes', 'Yes', 'y', 'Y', '1']
+  end
+
+  def false_boolean_strings
+    ['false', 'False', 'f', 'F', 'no', 'No', 'n', 'N', '0']
+  end
+
+  def random_boolean_strings
+    ['hello', 'world', 'goodbye', 'felicia']
   end
 end
