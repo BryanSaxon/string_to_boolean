@@ -1,8 +1,7 @@
 # StringToBoolean
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/string_to_boolean`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Add StringToBoolean to your app so that you can call `to_bool` on any string to
+get the boolean value!
 
 ## Installation
 
@@ -22,7 +21,36 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Use `to_bool` on any string.
+
+```ruby
+# True Examples (these are the only strings that return true):
+'True'.to_bool
+'true'.to_bool
+'T'.to_bool
+'t'.to_bool
+'Yes'.to_bool
+'yes'.to_bool
+'Y'.to_bool
+'y'.to_bool
+'1'.to_bool
+
+# False Examples:
+'False'.to_bool
+'false'.to_bool
+'F'.to_bool
+'f'.to_bool
+'No'.to_bool
+'no'.to_bool
+'N'.to_bool
+'n'.to_bool
+'0'.to_bool
+
+# Other False Examples:
+'hello'.to_bool
+'world'.to_bool
+'Any other string'.to_bool
+```
 
 ## Development
 
