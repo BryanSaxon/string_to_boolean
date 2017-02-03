@@ -25,11 +25,11 @@ class StringToBooleanTest < Minitest::Test
   private
 
   def true_boolean_strings
-    ['true', 'True', 't', 'T', 'yes', 'Yes', 'y', 'Y', '1']
+    ['true', 'True', 't', 'T', 'yes', 'Yes', 'y', 'Y', '1', 'p', 'P', 'Pass']
   end
 
   def false_boolean_strings
-    ['false', 'False', 'f', 'F', 'no', 'No', 'n', 'N', '0']
+    ['false', 'False', 'f', 'F', 'no', 'No', 'n', 'N', '0', 'fail', 'Fail']
   end
 
   def random_boolean_strings
