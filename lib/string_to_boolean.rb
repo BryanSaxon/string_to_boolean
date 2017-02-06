@@ -8,6 +8,6 @@ class String
   private
 
   def true_boolean_strings
-    ['true', 'True', 't', 'T', 'yes', 'Yes', 'y', 'Y', '1']
+    %w(true True t T yes Yes y Y 1 p P Pass)
   end
 end
