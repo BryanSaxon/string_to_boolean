@@ -23,8 +23,10 @@ Or install it yourself as:
 
 Use `to_bool` on any string.
 
+StringToBoolean is case insensitive.
+
 ```ruby
-# True Examples (these are the only strings that return true):
+# True Examples (these are some of the strings that return true):
 'True'.to_bool
 'true'.to_bool
 'T'.to_bool
